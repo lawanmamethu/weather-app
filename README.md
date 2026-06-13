@@ -49,7 +49,7 @@ Methuli Lawanma
 
 ## 📄 License 
 
-This project is for educational and portfolio purposes as part of the Front-End Internship at Codveda Technologies. 
+This project is for educational and portfolio purposes as part of the Front-End Internship.
 
 ---
 
