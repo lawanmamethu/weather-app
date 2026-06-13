@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherVerse | Beautiful Weather App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1><i class="fas fa-cloud-sun"></i> WeatherVerse</h1>
+            <p>Real-time weather | Beautiful design </p>
+        </div>
+
+        <div class="search-wrapper">
+            <i class="fas fa-search search-icon"></i>
+            <input type="text" class="search-input" id="cityInput" placeholder="Search city...">
+        </div>
+
+        <div class="loading" id="loading">
+            <div class="spinner"></div>
+            <p>Fetching weather magic... ✨</p>
+        </div>
+
+        <div class="error" id="error"></div>
+
+        <div class="weather-card" id="weatherCard">
+            <div class="weather-main">
+                <div class="weather-location">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span id="cityName">Hanwella, LK</span>
+                </div>
+                <div class="weather-temp" id="temperature">26°C</div>
+                <div class="weather-condition" id="description">Overcast Clouds</div>
+            </div>
+            
+            <div class="weather-details-grid">
+                <div class="detail-item">
+                    <div class="detail-icon"><i class="fas fa-thermometer-half"></i></div>
+                    <div class="detail-info">
+                        <div class="detail-label">FEELS LIKE</div>
+                        <div class="detail-value" id="feelsLike">26°C</div>
+                    </div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-icon"><i class="fas fa-tint"></i></div>
+                    <div class="detail-info">
+                        <div class="detail-label">HUMIDITY</div>
+                        <div class="detail-value" id="humidity">94%</div>
+                    </div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-icon"><i class="fas fa-wind"></i></div>
+                    <div class="detail-info">
+                        <div class="detail-label">WIND SPEED</div>
+                        <div class="detail-value" id="wind">3.24 m/s</div>
+                    </div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-icon"><i class="fas fa-compress-alt"></i></div>
+                    <div class="detail-info">
+                        <div class="detail-label">PRESSURE</div>
+                        <div class="detail-value" id="pressure">1011 hPa</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="weather-footer">
+                <div class="footer-info">
+                    <i class="fas fa-temperature-high"></i>
+                    <span id="fahrenheit">86°F</span>
+                </div>
+                <div class="footer-info">
+                    <i class="fas fa-cloud"></i>
+                    <span id="conditionExtra">Mostly cloudy</span>
+                </div>
+                <div class="footer-info">
+                    <i class="fas fa-clock"></i>
+                    <span id="currentTime">3:49 PM</span>
+                </div>
+                <div class="footer-info">
+                    <i class="fas fa-calendar"></i>
+                    <span id="currentDate">6/13/2026</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="initial" id="initialMsg">
+            <i class="fas fa-cloud-moon"></i>
+            <p>🔍 Search for a city to see weather information</p>
+            <small>Try: Colombo, London, New York</small>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
